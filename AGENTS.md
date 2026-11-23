@@ -12,6 +12,8 @@ Archive of numbered audio/video transmissions and accompanying text. Media and p
 
 ## Portfolio engineering workflow
 
+The Jira and private Notion steps below apply to portfolio maintainers and their agents. External contributors and dependency bots can use public GitHub issues and the repository’s normal branch, commit and PR conventions. Maintainers handle any internal tracking.
+
 1. **Pick up the issue.** For substantive changes, read the Jira issue, its acceptance criteria, dependencies and linked Notion context. Read this file, applicable directory instructions, contribution notes and the affected implementation before editing. Confirm the intended outcome with the owner if requirements are missing. Keep product strategy, research and durable decisions in Notion, execution status in Jira and implementation history in GitHub.
 2. **Claim a single line of work.** Check Jira status, open PRs, remote branches, `git status --short --branch` and `git worktree list`. Resume the existing issue branch when one exists. Coordinate a single writer per branch. For independent tasks, use separate branches and worktrees. Preserve other contributors’ uncommitted changes.
 3. **Name and scope changes.** Branch from the intended base using `type/PROJECT-123-short-description`. Use `feature`, `fix`, `chore`, `docs`, `refactor` or `test`. Include the real Jira key in each commit message and PR title. Work through PRs. Follow local code style, scoped instructions and existing CI, release and merge policies.
